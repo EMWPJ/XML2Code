@@ -17,11 +17,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    wxml.cpp \
+    Src/wxml.cpp \
+    Src/wxmltype.cpp \
+    Src/xmlconvert.cpp \
+    xml2code.cpp \
+    xml2codebase.cpp \
     xml2codetool.cpp
 
 HEADERS += \
-    wxml.h \
+    Src/wxml.h \
+    Src/wxmltype.h \
+    Src/xmlconvert.h\
+    xml2code.h \
+    xml2codebase.h \
     xml2codetool.h
 
 FORMS += \

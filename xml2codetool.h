@@ -2,6 +2,8 @@
 #define XML2CODETOOL_H
 
 #include <QWidget>
+#include "xml2codebase.h"
+#include "xml2code.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class XML2CodeTool; }
