@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="EMTFXML">
+  <XMLClass type="TEMTF" Root="0" name="EM_TF" abstract="0" path="EM_TF">
+    <Child name="Description" type="String" path="Description" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ProductId" type="String" path="ProductId" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="SubType" type="String" path="SubType" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Notes" type="String" path="Notes" number="2" leaf="1" visual="1" virtual="0"/>
+    <Child name="Tags" type="String" path="Tags" number="2" leaf="1" visual="1" virtual="0"/>
+    <Child name="Provenance" type="TEMTFProvenance" path="Provenance" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="Site" type="TEMTFSite" path="Site" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="ProcessingInfo" type="TEMTFProcessingInfo" path="ProcessingInfo" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="Data" type="TEMTFData" path="Data" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="PrimaryData" type="TEMTFFile" path="PrimaryData" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Attachment" type="TEMTFFile" path="Attachment" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Copyright" type="TEMTFCopyright" path="Copyright" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="StatisticalEstimates" type="TEMTFStatisticalEstimates" path="StatisticalEstimates" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="DataTypes" type="TEMTFDataTypes" path="DataTypes" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="GridOrigin" type="TEMTFGridOrigin" path="GridOrigin" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="SiteLayout" type="TEMTFSiteLayout" path="SiteLayout" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="PeriodRange" type="TEMTFPeriodRange" path="PeriodRange" number="0" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFSite" Root="0" name="Site" abstract="0" path="Site">
+    <Child name="Number" type="Integer" path="@number" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Project" type="String" path="Project" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Survey" type="String" path="Survey" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="AcquiredBy" type="String" path="AcquiredBy" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="YearCollected" type="Integer" path="YearCollected" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Id" type="String" path="Id" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Name" type="String" path="Name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ReleaseStatus" type="String" path="ReleaseStatus" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="StartTime" type="TDateTime" path="Start" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="EndTime" type="TDateTime" path="End" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="RunList" type="String" path="RunList" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Location" type="TEMTFLocation" path="Location" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="DataQualityNotes" type="TEMTFDataQualityNotes" path="DataQualityNotes" number="0" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFLocation" Root="0" name="Location" abstract="0" path="Location">
+    <Child name="Latitude" type="TEMTFUnitValue" path="Latitude" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="Longitude" type="TEMTFUnitValue" path="Longitude" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="Elevation" type="TEMTFUnitValue" path="Elevation" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="Declination" type="TEMTFDeclination" path="Declination" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="datum" type="String" path="@datum" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFProcessingInfo" Root="0" name="ProcessingInfo" abstract="0" path="ProcessingInfo">
+    <Child name="ProcessingSoftware" type="TEMTFProcessingSoftware" path="ProcessingSoftware" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="SignConvention" type="String" path="SignConvention" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ProcessedBy" type="String" path="ProcessedBy" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ProcessingTag" type="String" path="ProcessingTag" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="RemoteRef" type="TEMTFRemoteRef" path="RemoteRef" number="0" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFProcessingSoftware" Root="0" name="ProcessingSoftware" abstract="0" path="ProcessingSoftware">
+    <Child name="Name" type="String" path="Name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="LastMod" type="String" path="LastMod" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Author" type="String" path="Author" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFInstrument" Root="0" name="Instrument" abstract="0" path="Instrument">
+    <Child name="Manufacturer" type="String" path="Manufacturer" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Name" type="String" path="Name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Id" type="String" path="Id" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Settings" type="String" path="Settings" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Magentometertype" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFDipole" Root="0" name="Dipole" abstract="0" path="Dipole">
+    <Child name="name" type="String" path="@name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Dipoletype" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Manufacturer" type="String" path="Manufacturer" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Length" type="TEMTFUnitValue" path="Length" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Azimuth" type="TEMTFUnitValue" path="Azimuth" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Electrode" type="TEMTFElectrode" path="Electrode" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFDataTypes" Root="0" name="DataTypes" abstract="0" path="DataTypes">
+    <Child name="DataType" type="TEMTFDateType" path="DataType" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFDateType" Root="0" name="type" abstract="0" path="type">
+    <Child name="name" type="String" path="@name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ztype" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="output" type="String" path="@output" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="input" type="String" path="@input" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ExternalUrl" type="String" path="ExternalUrl" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Intention" type="String" path="Intention" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Tag" type="String" path="Tag" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFChannels" Root="0" name="Channels" abstract="0" path="Channels">
+    <Child name="ref" type="String" path="@ref" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Channel" type="TEMTFChannel" path="Channel" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFChannel" Root="0" name="Channel" abstract="0" path="Channel">
+    <Child name="name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="orientation" type="Double" path="@orientation" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="x" type="Double" path="@x" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="y" type="Double" path="@y" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="z" type="Double" path="@z" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="x2" type="Double" path="@x2" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="y2" type="Double" path="@y2" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="z2" type="Double" path="@z2" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFData" Root="0" name="Data" abstract="0" path="Data">
+    <Child name="PeriodData" type="TEMTFPeriodData" path="Period" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="count" type="Integer" path="@count" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFValue" Root="0" name="value" abstract="0" path="value">
+    <Child name="name" type="String" path="@name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="output" type="String" path="@output" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="input" type="String" path="@input" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="value" type="String" path="" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFProvenance" Root="0" name="Provenance" abstract="0" path="Provenance">
+    <Child name="CreateTime" type="TDateTime" path="CreateTime" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="CreatingApplication" type="String" path="CreatingApplication" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Creator" type="TEMTFPerson" path="Creator" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Submitter" type="TEMTFPerson" path="Submitter" number="0" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFPerson" Root="0" name="Person" abstract="0" path="Person">
+    <Child name="Name" type="String" path="Name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Email" type="String" path="Email" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Org" type="String" path="Org" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="OrgUrl" type="String" path="OrgUrl" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFDataQualityNotes" Root="0" name="DataQualityNotes" abstract="0" path="DataQualityNotes">
+    <Child name="Rating" type="Double" path="Rating" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="GoodFromPeriod" type="Double" path="GoodFromPeriod" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="GoodToPeriod" type="Double" path="GoodToPeriod" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Comments" type="TEMTFComments" path="Comments" number="1" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFUnitValue" Root="0" name="UnitValue" abstract="0" path="UnitValue">
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Value" type="Double" path="" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFElectrode" Root="0" name="Electrode" abstract="0" path="Electrode">
+    <Child name="location" type="String" path="@location" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Value" type="Double" path="" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="number" type="String" path="@number" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFPeriodData" Root="0" name="Period" abstract="0" path="Period">
+    <Child name="value" type="Double" path="@value" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="TF" type="TEMTFTFData" path="TF" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="TFVAR" type="TEMTFTFData" path="TFVAR" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="INVSIGCOV" type="TEMTFCOVData" path="INVSIGCOV" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="RESIDCOV" type="TEMTFCOVData" path="RESIDCOV" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Z" type="TEMTFZ" path="Z" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="ZVAR" type="TEMTFZ" path="Z.VAR" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="ZINVSIGCOV" type="TEMTFZ" path="Z.INVSIGCOV" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="ZRESIDCOV" type="TEMTFZ" path="Z.RESIDCOV" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="T" type="TEMTFZ" path="T" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="TVAR" type="TEMTFZ" path="T.VAR" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="TINVSIGCOV" type="TEMTFZ" path="T.INVSIGCOV" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="TRESIDCOV" type="TEMTFZ" path="T.RESIDCOV" number="0" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFTFData" Root="0" name="TFData" abstract="0" path="TFData">
+    <Child name="name" type="String" path="name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="comment" type="String" path="comment" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="size" type="Integer" path="size" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="value" type="TEMTFValue" path="value" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFCOVData" Root="0" name="Cov" abstract="0" path="Cov">
+    <Child name="name" type="String" path="name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="comment" type="String" path="comment" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="size" type="Integer" path="size" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="value" type="String" path="value" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFZ" Root="0" name="Z" abstract="0" path="Z">
+    <Child name="Ztype" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="size" type="String" path="@size" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="value" type="TEMTFValue" path="value" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFDeclination" Root="0" name="Declination" abstract="0" path="Declination">
+    <Child name="Value" type="Double" path="" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Epoch" type="Double" path="@epoch" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFRemoteRef" Root="0" name="RemoteRef" abstract="0" path="RemoteRef">
+    <Child name="Value" type="String" path="" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="RType" type="String" path="@type" number="2" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFComments" Root="0" name="Comments" abstract="0" path="Comments">
+    <Child name="Value" type="String" path="" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Author" type="String" path="@author" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFFile" Root="0" name="EMTFFile" abstract="0" path="EMTFFile">
+    <Child name="Filename" type="String" path="Filename" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFCopyright" Root="0" name="Copyright" abstract="0" path="Copyright">
+    <Child name="Citation" type="TEMTFCitation" path="Citation" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="ReleaseStatus" type="String" path="ReleaseStatus" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ConditionsOfUse" type="String" path="ConditionsOfUse" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFCitation" Root="0" name="Citation" abstract="0" path="Citation">
+    <Child name="Title" type="String" path="Title" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Authors" type="String" path="Authors" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Year" type="Integer" path="Year" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFStatisticalEstimates" Root="0" name="StatisticalEstimates" abstract="0" path="StatisticalEstimates">
+    <Child name="Estimate" type="TEMTFEstimate" path="Estimate" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFEstimate" Root="0" name="Estimate" abstract="0" path="Estimate">
+    <Child name="Name" type="String" path="@name" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="EType" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="ExternalUrl" type="String" path="ExternalUrl" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Intention" type="String" path="Intention" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Tag" type="String" path="Tag" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFGridOrigin" Root="0" name="GridOrigin" abstract="0" path="GridOrigin">
+    <Child name="Location" type="TEMTFLocation" path="Location" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="SiteCoords" type="TEMTFSiteCoords" path="SiteCoords" number="0" leaf="0" visual="1" virtual="0"/>
+    <Child name="Name" type="String" path="@name" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFSiteCoords" Root="0" name="SiteCoords" abstract="0" path="SiteCoords">
+    <Child name="Stype" type="String" path="@type" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="units" type="String" path="@units" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="X" type="Double" path="X" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Y" type="Double" path="Y" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="Z" type="Double" path="Z" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFSiteLayout" Root="0" name="SiteLayout" abstract="0" path="SiteLayout">
+    <Child name="InputChannels" type="TEMTFChannels" path="InputChannels" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="OutputChannels" type="TEMTFChannels" path="OutputChannels" number="1" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMTFPeriodRange" Root="0" name="PeriodRange" abstract="0" path="PeriodRange">
+    <Child name="min" type="Double" path="@min" number="0" leaf="1" visual="1" virtual="0"/>
+    <Child name="max" type="Double" path="@max" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+</XML2Code>

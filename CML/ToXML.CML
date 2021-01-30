@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="ToXML">
+  <XMLClass name="ToXML" type="T2XML" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="0" visual="1" name="Folder" type="TXMLFolder" path="Folder" number="2"/>
+    <Child leaf="0" visual="1" name="Files" type="TXMLFile" path="XML" number="2"/>
+  </XMLClass>
+  <XMLClass name="Folder" type="TXMLFolder" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="0" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="0" visual="1" name="Files" type="TXMLFile" path="XML" number="2"/>
+  </XMLClass>
+  <XMLClass name="XMLFile" type="TXMLFile" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="XMLType" type="XMLType" path="XMLType" number="1"/>
+  </XMLClass>
+  <XMLClass name="Point" type="TGeoPoint" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Position" type="coordinate" path="Position" number="1"/>
+    <Child leaf="0" visual="1" name="PointStyle" type="TGeoPointStyle" path="PointStyle" number="0"/>
+  </XMLClass>
+  <XMLClass name="Line" type="TGeoLine" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="PointA" type="coordinate" path="PointA" number="1"/>
+    <Child leaf="1" visual="1" name="PointB" type="coordinate" path="PointB" number="1"/>
+    <Child leaf="0" visual="1" name="Style" type="TGeoLineStyle" path="Style" number="0"/>
+  </XMLClass>
+  <XMLClass name="MultiLine" type="TGeoMultiLine" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Points" type="coordinates" path="Points" number="1"/>
+    <Child leaf="0" visual="1" name="Style" type="TGeoLineStyle" path="Style" number="0"/>
+  </XMLClass>
+  <XMLClass name="LineRing" type="TGeoLineRing" root="1">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Points" type="coordinates" path="Points" number="1"/>
+    <Child leaf="0" visual="1" name="Style" type="TGeoLineStyle" path="Style" number="0"/>
+  </XMLClass>
+</XML2Code>

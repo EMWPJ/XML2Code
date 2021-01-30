@@ -1,0 +1,11 @@
+object FormXML2CodeClassForm: TFormXML2CodeClassForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 311
+  ClientWidth = 450
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end

@@ -1,0 +1,71 @@
+object FrameXML2Code: TFrameXML2Code
+  Size.Width = 281.000000000000000000
+  Size.Height = 462.000000000000000000
+  Size.PlatformDefault = False
+  object SplitterBottom: TSplitter
+    Align = Bottom
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 325.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 3.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object XML2CodeMenuBar: TMenuBar
+    Size.Width = 281.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object NewXML2CodeButton: TMenuItem
+      Text = 'New XML2Code'
+      OnClick = NewXML2Code
+    end
+    object OpenXML2CodeButton: TMenuItem
+      Text = 'Open XML2Code'
+      OnClick = OpenXML2Code
+    end
+    object SaveXML2CodeButton: TMenuItem
+      Text = 'Save XML2Code'
+      OnClick = SaveXML2Code
+    end
+  end
+  object OpenDialogXML2Code: TOpenDialog
+    Filter = 'XML2Code|*.XML2Code'
+    Left = 16
+    Top = 96
+  end
+  object SaveDialogXML2Code: TSaveDialog
+    Filter = 'XML2Code|*.XML2Code'
+    Left = 104
+    Top = 96
+  end
+  object XML2CodeIns: TXMLInspector
+    Align = Bottom
+    Position.Y = 328.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 134.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 281.000000000000000000
+    Viewport.Height = 134.000000000000000000
+  end
+  object XML2CodeTree: TXMLTree
+    AllowPanning = pmVertical
+    BufferedDisplay = False
+    CrossBox.Border.Fill.Color = claGray
+    Grid.BigPen.Fill.Color = claGray
+    Grid.Pen.Fill.Color = claSilver
+    HotTrack.Font.StyleExt = {04040000000000000004000000}
+    Page.Border.Fill.Color = claDarkgray
+    ScrollMouseButton = mbLeft
+    Selected.Border.Fill.Color = claYellow
+    Selected.ShiftState = [ssCtrl]
+    SingleSelection = False
+    WheelNavigation = wnZoom
+    Zoom.Brush.Kind = None
+    Zoom.MouseButton = mbMiddle
+    Zoom.MouseWheel = pmwNormal
+    Align = Client
+    TabOrder = 6
+  end
+end

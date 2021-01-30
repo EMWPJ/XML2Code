@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="BML">
+  <XMLClass type="TBML" root="1" name="BML">
+    <Child leaf="1" name="name" type="String" path="name" number="1" />
+    <Child leaf="1" name="Description" type="String" path="description" number="1" />
+    <Child leaf="0" name="Block" type="TBlock" path="Block" number="2" />
+  </XMLClass>
+  <XMLClass type="TBlock" root="0" name="Block">
+    <Child leaf="1" name="Name" type="String" path="name" number="1" />
+    <Child leaf="1" name="Boundary" type="ArrayCoordinates" path="Boundary" number="1" />
+    <Child leaf="0" name="FaultZone" type="TFaultZone" path="FaultZone" number="2" />
+  </XMLClass>
+</XML2Code>

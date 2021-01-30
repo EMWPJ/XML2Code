@@ -1,0 +1,36 @@
+object FrameTextEditor: TFrameTextEditor
+  Size.Width = 320.000000000000000000
+  Size.Height = 453.000000000000000000
+  Size.PlatformDefault = False
+  object PopupMenuLines: TPopupMenu
+    Left = 144
+    Top = 168
+    object LoadMenu: TMenuItem
+      Text = 'Load'
+      OnClick = LoadMenuClick
+    end
+    object SaveMenu: TMenuItem
+      Text = 'Save'
+      OnClick = SaveMenuClick
+    end
+  end
+  object OpenDialogText: TOpenDialog
+    Left = 96
+    Top = 248
+  end
+  object SaveDialogText: TSaveDialog
+    Left = 192
+    Top = 248
+  end
+  object MemoText: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 453.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 453.000000000000000000
+  end
+end

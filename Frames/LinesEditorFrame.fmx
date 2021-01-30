@@ -1,0 +1,43 @@
+object FrameLinesEditor: TFrameLinesEditor
+  Size.Width = 320.000000000000000000
+  Size.Height = 453.000000000000000000
+  Size.PlatformDefault = False
+  object ListBox: TListBox
+    Align = Client
+    PopupMenu = PopupMenuLines
+    Size.Width = 320.000000000000000000
+    Size.Height = 453.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 316.000000000000000000
+    Viewport.Height = 449.000000000000000000
+  end
+  object PopupMenuLines: TPopupMenu
+    Left = 144
+    Top = 168
+    object LoadMenu: TMenuItem
+      Text = 'Load'
+      OnClick = LoadMenuClick
+    end
+    object SaveMenu: TMenuItem
+      Text = 'Save'
+      OnClick = SaveMenuClick
+    end
+    object ClearMenu: TMenuItem
+      Text = 'Clear'
+      OnClick = ClearMenuClick
+    end
+  end
+  object OpenDialogLines: TOpenDialog
+    Left = 96
+    Top = 248
+  end
+  object SaveDialogLines: TSaveDialog
+    Left = 192
+    Top = 248
+  end
+end

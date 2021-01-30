@@ -1,0 +1,106 @@
+object FormXML2CodeTool: TFormXML2CodeTool
+  Left = 0
+  Top = 0
+  Caption = 'XML2CodeTool'
+  ClientHeight = 500
+  ClientWidth = 374
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object XML2CodeMenuBar: TMenuBar
+    Size.Width = 374.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ExportBasePasTool: TMenuItem
+      Locked = True
+      Text = 'Export Base Pas'
+      OnClick = ExportBasePas
+    end
+    object ExportPasTool: TMenuItem
+      Locked = True
+      Text = 'Export Pas'
+      OnClick = ExportPas
+    end
+    object VisualCodeMenu: TMenuItem
+      AutoCheck = True
+      IsChecked = True
+      Text = 'Visual Code'
+      OnClick = VisualCodeMenuClick
+    end
+    object ExportFrameTool: TMenuItem
+      Text = 'Export Frame'
+      OnClick = ExportFrame
+    end
+    object ExitTool: TMenuItem
+      Text = 'Exit'
+      OnClick = ExitToolClick
+    end
+  end
+  object XML2CodeMenus: TMainMenu
+    Left = 320
+    Top = 64
+    object CodeMenu: TMenuItem
+      Text = 'Code'
+      object ExportBasePasMenu: TMenuItem
+        Locked = True
+        ShortCut = 16450
+        Text = 'Export Base Pas'
+        OnClick = ExportBasePas
+      end
+      object ExportPasMenu: TMenuItem
+        Locked = True
+        ShortCut = 16464
+        Text = 'Export Pas'
+        OnClick = ExportPas
+      end
+      object ExportFrameMenu: TMenuItem
+        Locked = True
+        Text = 'Export Frame '
+        OnClick = ExportFrame
+      end
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Bottom
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 497.000000000000000000
+    Size.Width = 374.000000000000000000
+    Size.Height = 3.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inline X2C: TFrameXML2Code
+    Align = Client
+    Size.Width = 374.000000000000000000
+    Size.Height = 473.000000000000000000
+    Size.PlatformDefault = False
+    inherited SplitterBottom: TSplitter
+      Position.Y = 336.000000000000000000
+      Size.Width = 374.000000000000000000
+    end
+    inherited XML2CodeMenuBar: TMenuBar
+      Size.Width = 374.000000000000000000
+    end
+    inherited OpenDialogXML2Code: TOpenDialog
+      Filter = 'CML|*.CML'
+      Left = 48
+    end
+    inherited SaveDialogXML2Code: TSaveDialog
+      Filter = 'CML|*.CML'
+      Left = 176
+    end
+    inherited XML2CodeIns: TXMLInspector
+      Position.Y = 339.000000000000000000
+      Size.Width = 374.000000000000000000
+      Viewport.Width = 374.000000000000000000
+      Viewport.Height = 134.000000000000000000
+    end
+    inherited XML2CodeTree: TXMLTree
+      HotTrack.Font.StyleExt = {04040000000000000004000000}
+    end
+  end
+end

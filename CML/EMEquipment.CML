@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="EMEquipment" using="XMLPhoenix">
+  <XMLClass type="TEMBox" Root="1" name="Box" abstract="0" path="Box"/>
+  <XMLClass type="TEMSensor" Root="1" name="Sensor" path="Sensor"/>
+</XML2Code>

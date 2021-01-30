@@ -1,0 +1,38 @@
+object FrameListView: TFrameListView
+  Size.Width = 216.000000000000000000
+  Size.Height = 271.000000000000000000
+  Size.PlatformDefault = False
+  object List: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    EditMode = True
+    Align = Client
+    PopupMenu = ListPop
+    Size.Width = 216.000000000000000000
+    Size.Height = 271.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnItemClickEx = ListItemClickEx
+  end
+  object ListPop: TPopupMenu
+    Left = 102
+    Top = 107
+    object ClearMenu: TMenuItem
+      ShortCut = 16451
+      Text = 'Clear'
+      OnClick = ClearMenuClick
+    end
+    object RemoveUnCheckedMenu: TMenuItem
+      ShortCut = 16469
+      Text = 'Remove UnChecked'
+      OnClick = RemoveUnCheckedMenuClick
+    end
+    object RemoveCheckedMenu: TMenuItem
+      ShortCut = 16466
+      Text = 'Remove Checked'
+      OnClick = RemoveCheckedMenuClick
+    end
+  end
+end

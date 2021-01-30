@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="TSProcessSchema" using="XMLSSA">
+  <XMLClass type="TTSProcessSchema" Root="1" name="ProcessSchema" abstract="0" path="TSProcessSchema">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Processes" type="TTSProcessMethod" path="Process" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TTSProcessMethod" Root="1" name="TSProcessMethod" childClass="TFilter TDFA TSSA TMSSA TEMD TVMD" abstract="1" path="Method">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TFilter" Root="1" name="Filter" parentClass="TTSProcessMethod" abstract="1" path="Filter"/>
+  <XMLClass type="THighPassFilter" Root="1" name="HighPassFilter" parentClass="TFilter" abstract="0" path="HighPassFilter"/>
+  <XMLClass type="TLowPassFilter" Root="1" name="LowPassFilter" parentClass="TFilter" abstract="0" path="LowPassFilter"/>
+  <XMLClass type="TBandPassFilter" Root="1" name="BandPassFilter" parentClass="TFilter" abstract="0" path="BandPassFilter"/>
+  <XMLClass type="TBandStopFilter" Root="1" name="BandStopFilter" parentClass="TFilter" abstract="0" path="BandStopFilter"/>
+  <XMLClass type="THarmonicFilter" Root="1" name="HarmonicFilter" parentClass="TFilter" abstract="0" path="HarmonicFilter"/>
+  <XMLClass type="TMultipleFilter" Root="1" name="MultipleFilter" parentClass="TFilter" abstract="0" path="MultipleFilter"/>
+  <XMLClass type="TDFA" Root="1" name="DFA" parentClass="TTSProcessMethod" abstract="0" path="DFA"/>
+  <XMLClass type="TVMD" Root="1" name="VMD" parentClass="TTSProcessMethod" abstract="0" path="VMD"/>
+  <XMLClass type="TEMD" Root="1" name="EMD" parentClass="TTSProcessMethod" abstract="0" path="EMD"/>
+  <XMLClass type="TSSA" Root="1" name="SSA" parentClass="TTSProcessMethod" abstract="0" path="SSA">
+    <Child name="TsLength" type="Integer" path="TsLength" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="WindowLength" type="Integer" path="WindowLength" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="TS" type="TArray1D" path="TS" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Eigen" type="TArray1D" path="Eigen" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="EigenU" type="TArray1D" path="EigenU" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="EigenV" type="TArray1D" path="EigenV" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Alpha" type="TArray1D" path="Alpha" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TMSSA" Root="1" name="MSSA" parentClass="TTSProcessMethod" abstract="0" path="MSSA">
+    <Child name="TsLength" type="Integer" path="TsLength" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="TSCount" type="Integer" path="TSCount" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="WindowLength" type="Integer" path="WindowLength" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="TS" type="TArray1D" path="TS" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Eigen" type="TArray1D" path="Eigen" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="EigenU" type="TArray1D" path="EigenU" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="EigenV" type="TArray1D" path="EigenV" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Alpha" type="TArray1D" path="Alpha" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+</XML2Code>

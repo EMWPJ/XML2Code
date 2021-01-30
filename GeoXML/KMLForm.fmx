@@ -1,0 +1,34 @@
+object FormKML: TFormKML
+  Left = 0
+  Top = 0
+  Caption = 'KMLEditor'
+  ClientHeight = 480
+  ClientWidth = 308
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inline KMLFrame: TFrameKML
+    Align = Client
+    Size.Width = 308.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    inherited SplitterBottom: TSplitter
+      Position.Y = 343.000000000000000000
+      Size.Width = 308.000000000000000000
+    end
+    inherited KMLMenuBar: TMenuBar
+      Size.Width = 308.000000000000000000
+    end
+    inherited KMLIns: TXMLInspector
+      Position.Y = 346.000000000000000000
+      Size.Width = 308.000000000000000000
+      Viewport.Width = 308.000000000000000000
+      Viewport.Height = 134.000000000000000000
+    end
+    inherited KMLTree: TXMLTree
+      HotTrack.Font.StyleExt = {04040000000000000004000000}
+    end
+  end
+end

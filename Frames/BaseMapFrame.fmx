@@ -1,0 +1,117 @@
+inherited FrameBaseMapChart: TFrameBaseMapChart
+  Size.Width = 824.000000000000000000
+  Size.Height = 619.000000000000000000
+  inherited Chart: TChart
+    Foot.Font.StyleExt = {00070000000000000004000000}
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    Legend.Visible = False
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    Title.Font.StyleExt = {00070000000000000004000000}
+    Title.Text.Strings = ()
+    SeriesGroups = <
+      item
+        Name = 'BaseMapGroup'
+      end
+      item
+        Name = 'GeoGroup'
+      end>
+    View3DOptions.FontZoom = 269
+    Zoom.KeepAspectRatio = True
+    OnAfterDraw = ChartAfterDraw
+    OnBeforeDrawSeries = ChartBeforeDrawSeries
+    Size.Width = 824.000000000000000000
+    Size.Height = 619.000000000000000000
+    object SeriesBaseMap: TMapSeries
+      HoverElement = []
+      Marks.AutoPosition = False
+      Marks.Clip = True
+      Pointer.InflateMargins = True
+      Pointer.SizeUnits = suAxis
+      Pointer.Style = psRectangle
+      PointSize = 0.100000001490116100
+      RenderOptions.Brush.Gradient.EndColor = claNavy
+      RenderOptions.Brush.BackColor = claNavy
+      Shapes = <
+        item
+          Color = xFF7F7FFE
+          ParentBrush = False
+          Text = 'A'
+          Z = 0.208000000000000000
+        end
+        item
+          Color = xFFD4FD8B
+          ParentBrush = False
+          Text = 'B'
+          Z = 0.514000000000000000
+        end
+        item
+          Color = xFFFD9702
+          ParentBrush = False
+          Text = 'C'
+          Z = 0.835000000000000000
+        end
+        item
+          Color = xFFFD8B00
+          ParentBrush = False
+          Text = 'D'
+          Z = 0.861000000000000000
+        end
+        item
+          Color = xFFFABA0E
+          ParentBrush = False
+          Text = 'E'
+          Z = 0.775000000000000000
+        end
+        item
+          Color = xFFFD9702
+          ParentBrush = False
+          Text = 'F'
+          Z = 0.827000000000000000
+        end
+        item
+          Color = xFFE1FB66
+          ParentBrush = False
+          Text = 'G'
+          Z = 0.571000000000000000
+        end
+        item
+          Color = xFFB5E1CF
+          ParentBrush = False
+          Text = 'H'
+          Z = 0.385000000000000000
+        end
+        item
+          Color = xFFD4FD8B
+          ParentBrush = False
+          Text = 'I'
+          Z = 0.514000000000000000
+        end
+        item
+          Color = xFFE5F85A
+          ParentBrush = False
+          Text = 'J'
+          Z = 0.604000000000000000
+        end
+        item
+          Color = xFFA3C5E8
+          ParentBrush = False
+          Text = 'K'
+          Z = 0.319000000000000000
+        end
+        item
+          Color = xFFE8F44E
+          ParentBrush = False
+          Text = 'L'
+          Z = 0.615000000000000000
+        end>
+      UseColorRange = False
+      UsePalette = True
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+      ZValues.Name = 'Value'
+      ZValues.Order = loNone
+    end
+  end
+end
