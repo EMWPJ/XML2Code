@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="GeoXML">
+  <XMLClass type="TGeoXML" Root="1" name="GeoXML" abstract="0" path="GeoXML">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Folder" type="TGeoFolder" path="Folder" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Style" type="TGeoStyle" path="Style" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoFolder" Root="1" name="Folder" abstract="0" path="Folder">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Folder" type="TGeoFolder" path="Folder" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Element" type="TGeoElement" path="#Optional" number="2" leaf="0" visual="1" virtual="1"/>
+    <Child name="Style" type="Integer" path="Style" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoElement" Root="1" name="Element" childClass="TGeoPoint TGeoLine TGeoLines TGeoPolygon" abstract="1" path="#Optional">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Visible" type="Boolean" path="Visible" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Position" type="coordinates" path="Position" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Style" type="Integer" path="Style" number="0" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoPoint" Root="1" name="Point" parentClass="TGeoElement" abstract="0" path="Point"/>
+  <XMLClass type="TGeoLine" Root="1" name="Line" parentClass="TGeoElement" abstract="0" path="Line"/>
+  <XMLClass type="TGeoLines" Root="1" name="Lines" parentClass="TGeoElement" abstract="0" path="Lines">
+    <Child name="Closed" type="Boolean" path="Closed" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoPolygon" Root="1" name="Polygon" parentClass="TGeoElement" abstract="0" path="Polygon">
+    <Child name="Filled" type="Boolean" path="Filled" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoStyle" Root="1" name="Style" childClass="TGeoPointStyle TGeoLineStyle TGeoPolygonStyle" abstract="1" path="Style">
+    <Child name="Name" type="String" path="@name" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoPointStyle" Root="1" name="PointStyle" parentClass="TGeoStyle" abstract="0" path="PointStyle">
+    <Child name="Color" type="Integer" path="Color" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Size" type="Double" path="Size" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="PointStyle" type="Integer" path="PointStyle" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="BorderStyle" type="Integer" path="BorderStyle" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="BorderColor" type="Color" path="BorderColor" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="BorderWidth" type="Double" path="BorderWidth" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoLineStyle" Root="1" name="LineStyle" parentClass="TGeoStyle" abstract="0" path="LineStyle">
+    <Child name="PointStyle" type="TGeoPointStyle" path="PointStyle" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="LineColor" type="Color" path="LineColor" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="LineWidth" type="Double" path="LineWidth" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="LineStyle" type="Integer" path="LineStyle" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="LineEndStyle" type="Integer" path="LineEndStyle" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="LineJoinStyle" type="Integer" path="LineJoinStyle" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TGeoPolygonStyle" Root="1" name="PolygonStyle" parentClass="TGeoStyle" abstract="0" path="PolygonStyle">
+    <Child name="LineStyle" type="TGeoLineStyle" path="LineStyle" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="FillColor" type="Color" path="FillColor" number="1" leaf="1" visual="1" virtual="0"/>
+  </XMLClass>
+</XML2Code>

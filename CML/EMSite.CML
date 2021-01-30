@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="EMSite" using="XMLPhoenixMTXPR XMLPhoenix EMTFXML">
+  <XMLClass type="TEMSite" Root="1" name="Site" abstract="0" path="Site">
+    <Child name="Name" type="String" path="Name" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="EDIID" type="String" path="EDIID" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="SiteInfo" type="TEMSiteInfo" path="Info" number="1" leaf="0" visual="1" virtual="0"/>
+    <Child name="SiteData" type="TEMSiteData" path="Data" number="1" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteInfo" Root="1" name="SiteInfo" abstract="0" path="Info">
+    <Child name="Latitude" type="Double" path="Latitude" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Longitude" type="Double" path="Longitude" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Altitude" type="Double" path="Altitude" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Trace" type="ArrayCoordinate" path="Trace" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Photo" type="String" path="Photo" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Operator" type="String" path="Operator" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Worker" type="String" path="Worker" number="2" leaf="0" visual="0" virtual="0"/>
+    <Child name="Editor" type="String" path="Editor" number="1" leaf="0" visual="0" virtual="0"/>
+    <Child name="Log" type="String" path="Log" number="2" leaf="0" visual="0" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteData" Root="1" name="SiteData" path="Data">
+    <Child name="OriginTS" type="TEMSiteTS" path="OriginTS" number="1" leaf="0" visual="1"/>
+    <Child name="EditorTS" type="TEMSiteTS" path="EditorTS" number="2" leaf="0" visual="1"/>
+    <Child name="FC" type="TEMSiteFC" path="FC" number="2" leaf="0" visual="1"/>
+    <Child name="MT" type="TEMSiteMT" path="MT" number="2" leaf="0" visual="1"/>
+    <Child name="MPK" type="TEMSiteMPK" path="MPK" number="2" leaf="0" visual="1"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteTS" Root="1" name="TS" abstract="0" path="TS">
+    <Child name="Name" type="String" path="Name" number="1" leaf="0" visual="1"/>
+    <Child name="ID" type="String" path="ID" number="1" leaf="0" visual="1"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1"/>
+    <Child name="Path" type="String" path="Path" number="1" leaf="0" visual="1"/>
+    <Child name="TBL" type="String" path="TBL" number="1" leaf="0" visual="1"/>
+    <Child name="TS" type="String" path="TS" number="2" leaf="0" visual="1"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteFC" Root="1" name="FC" abstract="0" path="FC">
+    <Child name="Name" type="String" path="Name" number="1" leaf="0" visual="1"/>
+    <Child name="ID" type="String" path="ID" number="1" leaf="0" visual="1"/>
+    <Child name="TSID" type="String" path="TSID" number="1" leaf="0" visual="1"/>
+    <Child name="PFT" type="String" path="PFT" number="1" leaf="0" visual="1"/>
+    <Child name="Path" type="String" path="Path" number="1" leaf="0" visual="1"/>
+    <Child name="FCFiles" type="String" path="FCFiles" number="2" leaf="0" visual="1"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteMT" Root="1" name="MT" abstract="0" path="FC">
+    <Child name="Name" type="String" path="Name" number="1" leaf="0" visual="1"/>
+    <Child name="ID" type="String" path="ID" number="1" leaf="0" visual="1"/>
+    <Child name="FCID" type="String" path="FCID" number="1" leaf="0" visual="1"/>
+    <Child name="PRM" type="String" path="PRM" number="1" leaf="0" visual="1"/>
+    <Child name="Path" type="String" path="Path" number="1" leaf="0" visual="1"/>
+    <Child name="EDI" type="String" path="EDI" number="1" leaf="0" visual="1"/>
+    <Child name="MTFiles" type="String" path="MTFiles" number="2" leaf="0" visual="1"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteMPK" Root="1" name="MPK" abstract="0" path="FC">
+    <Child name="Name" type="String" path="Name" number="1" leaf="0" visual="1"/>
+    <Child name="ID" type="String" path="ID" number="1" leaf="0" visual="1"/>
+    <Child name="MTID" type="String" path="MTID" number="1" leaf="0" visual="1"/>
+    <Child name="Path" type="String" path="Path" number="1" leaf="0" visual="1"/>
+    <Child name="MPK" type="String" path="MPK" number="1" leaf="0" visual="1"/>
+    <Child name="EDI" type="String" path="EDI" number="1" leaf="0" visual="1"/>
+  </XMLClass>
+</XML2Code>

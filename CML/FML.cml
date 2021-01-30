@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<XML2Code name="FML">
+  <XMLClass type="TFML" root="1" name="FML">
+    <Child leaf="1" visual="1" name="Name" type="String" path="Name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="0" visual="1" name="FaultZone" type="TFaultZone" path="FaultZone" number="2"/>
+  </XMLClass>
+  <XMLClass type="TFaultZone" root="0" name="FaultZone">
+    <Child leaf="1" visual="1" name="Name" type="String" path="Name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="0" visual="1" name="Fault" type="TFault" path="Fault" number="2"/>
+  </XMLClass>
+  <XMLClass type="TFault" root="0" name="Fault">
+    <Child leaf="1" visual="1" name="Name" type="String" path="Name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="0" visual="1" name="Segment" type="TFaultSegment" path="Segment" number="2"/>
+  </XMLClass>
+  <XMLClass type="TFaultSegment" root="0" name="Segment">
+    <Child leaf="1" visual="1" name="Name" type="String" path="Name" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Coordinate" type="ArrayCoordinates" path="Coordinate" number="1"/>
+    <Child leaf="1" visual="1" name="FaultType" type="String" path="Type" number="1"/>
+    <Child leaf="1" visual="1" name="Strike" type="Double" path="Strike" number="1"/>
+    <Child leaf="1" visual="1" name="DipDir" type="Double" path="DipDir" number="1"/>
+    <Child leaf="1" visual="1" name="DipAngle" type="Double" path="DipAngle" number="1"/>
+    <Child leaf="1" visual="1" name="Width" type="Double" path="Width" number="1"/>
+    <Child leaf="1" visual="1" name="Length" type="Double" path="Length" number="1"/>
+    <Child leaf="1" visual="1" name="Age" type="String" path="Age" number="1"/>
+    <Child leaf="1" visual="1" name="Show" type="Boolean" path="Show" number="1"/>
+  </XMLClass>
+</XML2Code>

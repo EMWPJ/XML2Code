@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<XML2Code name="EML">
+  <XMLClass type="TEDIML" root="1" name="EML">
+    <Child leaf="0" visual="" name="EDI" type="TEDI" path="EDI" number="2"/>
+    <Child leaf="1" visual="" name="Version" type="String" path="@Version" number="0"/>
+    <Child leaf="1" visual="" name="Creator" type="String" path="@Creator" number="0"/>
+    <Child leaf="1" visual="" name="Name" type="String" path="@Name" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDI" root="0" name="EDI">
+    <Child leaf="0" visual="" name="Head" type="TEDIHead" path="Head" number="1"/>
+    <Child leaf="1" visual="" name="Information" type="String" path="Infomation" number="1"/>
+    <Child leaf="0" visual="" name="Measurements" type="TEDIMeasurements" path="Measurements" number="1"/>
+    <Child leaf="0" visual="" name="Section" type="TEDISection" path="Section" number="2"/>
+    <Child leaf="1" visual="" name="Version" type="String" path="@Version" number="0"/>
+    <Child leaf="1" visual="" name="Creator" type="String" path="@Creator" number="0"/>
+    <Child leaf="1" visual="" name="Description" type="String" path="Description" number="0"/>
+    <Child leaf="1" visual="" name="Name" type="String" path="Name" number="1"/>
+  </XMLClass>
+  <XMLClass type="TEDIHead" root="0" name="Head">
+    <Child leaf="1" visual="" name="DataID" type="String" path="DataID" number="0"/>
+    <Child leaf="1" visual="" name="AcquiredBy" type="String" path="AcquiredBy" number="0"/>
+    <Child leaf="1" visual="" name="FileBy" type="String" path="FileBy" number="0"/>
+    <Child leaf="1" visual="" name="AcquiredDate" type="String" path="AcquiredDate" number="0"/>
+    <Child leaf="1" visual="" name="EndDate" type="String" path="EndDate" number="0"/>
+    <Child leaf="1" visual="" name="FiledDate" type="String" path="FiledDate" number="0"/>
+    <Child leaf="1" visual="" name="StandardVersions" type="String" path="StandardVersions" number="0"/>
+    <Child leaf="1" visual="" name="ProgramVersions" type="String" path="ProgramVersions" number="0"/>
+    <Child leaf="1" visual="" name="Name" type="String" path="Name" number="0"/>
+    <Child leaf="1" visual="" name="ProgramDate" type="String" path="ProgramDate" number="0"/>
+    <Child leaf="1" visual="" name="Country" type="String" path="Country" number="0"/>
+    <Child leaf="1" visual="" name="State" type="String" path="State" number="0"/>
+    <Child leaf="1" visual="" name="County" type="String" path="County" number="0"/>
+    <Child leaf="1" visual="" name="Prospect" type="String" path="Prospect" number="0"/>
+    <Child leaf="1" visual="" name="Location" type="String" path="Location" number="0"/>
+    <Child leaf="1" visual="" name="Latitude" type="Double" path="Latitude" number="0"/>
+    <Child leaf="1" visual="" name="Longitude" type="Double" path="Longitude" number="0"/>
+    <Child leaf="1" visual="" name="Elevation" type="Double" path="Elevation" number="0"/>
+    <Child leaf="1" visual="" name="Units" type="String" path="Units" number="0"/>
+    <Child leaf="1" visual="" name="MaxSections" type="Integer" path="MaxSections" number="0"/>
+    <Child leaf="1" visual="" name="BinaryData" type="String" path="BinaryData" number="0"/>
+    <Child leaf="1" visual="" name="Empty" type="String" path="Empty" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDIMeasurements" root="0" name="Measurements">
+    <Child leaf="0" visual="" name="Measurement" type="TEDIMeasurement" path="Measurement" number="2"/>
+    <Child leaf="1" visual="" name="MaxChannels" type="Integer" path="MaxChannels" number="0"/>
+    <Child leaf="1" visual="" name="ElevationUnits" type="String" path="ElevationUnits" number="0"/>
+    <Child leaf="1" visual="" name="RefType" type="String" path="RefType" number="0"/>
+    <Child leaf="1" visual="" name="MaxRuns" type="Integer" path="MaxRuns" number="0"/>
+    <Child leaf="1" visual="" name="MaxMasurements" type="Integer" path="MaxMasurements" number="0"/>
+    <Child leaf="1" visual="" name="RefLocation" type="String" path="RefLocation" number="0"/>
+    <Child leaf="1" visual="" name="RefLatitude" type="Double" path="RefLatitude" number="0"/>
+    <Child leaf="1" visual="" name="RefLongitude" type="Double" path="RefLongitude" number="0"/>
+    <Child leaf="1" visual="" name="RefElevation" type="Double" path="RefElevation" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDIMeasurement" root="0" name="Measurement">
+    <Child leaf="1" visual="" name="EH" type="String" path="EH" number="0"/>
+    <Child leaf="1" visual="" name="ID" type="String" path="ID" number="0"/>
+    <Child leaf="1" visual="" name="ChanType" type="String" path="ChanType" number="0"/>
+    <Child leaf="1" visual="" name="X" type="Double" path="X" number="0"/>
+    <Child leaf="1" visual="" name="Y" type="Double" path="Y" number="0"/>
+    <Child leaf="1" visual="" name="Z" type="Double" path="Z" number="0"/>
+    <Child leaf="1" visual="" name="X2" type="Double" path="X2" number="0"/>
+    <Child leaf="1" visual="" name="Y2" type="Double" path="Y2" number="0"/>
+    <Child leaf="1" visual="" name="Z2" type="Double" path="Z2" number="0"/>
+    <Child leaf="1" visual="" name="Azimuth" type="Double" path="Azimuth" number="0"/>
+    <Child leaf="1" visual="" name="AcqChan" type="String" path="AcqChan" number="0"/>
+    <Child leaf="1" visual="" name="Filter" type="String" path="Filter" number="0"/>
+    <Child leaf="1" visual="" name="MeasDate" type="String" path="MeasDate" number="0"/>
+    <Child leaf="1" visual="" name="Gain" type="Double" path="Gain" number="0"/>
+    <Child leaf="1" visual="" name="DIP" type="Double" path="DIP" number="0"/>
+    <Child leaf="1" visual="" name="Sensor" type="String" path="Sensor" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDISection" root="0" name="Section">
+    <Child leaf="0" visual="" name="Block" type="TEDIBlock" path="Block" number="2"/>
+    <Child leaf="1" visual="" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="" name="SectionType" type="Integer" path="SectionType" number="0"/>
+    <Child leaf="1" visual="" name="NumberChannels" type="Integer" path="NumberChannels" number="0"/>
+    <Child leaf="1" visual="" name="NumberFrequencies" type="Integer" path="NumberFrequencies" number="0"/>
+    <Child leaf="1" visual="" name="MaxBlocks" type="Integer" path="MaxBlocks" number="0"/>
+    <Child leaf="1" visual="" name="NumberDipoles" type="Integer" path="NumberDipoles" number="0"/>
+    <Child leaf="1" visual="" name="N" type="Integer" path="N" number="0"/>
+    <Child leaf="1" visual="" name="SectionID" type="String" path="SectionID" number="0"/>
+    <Child leaf="1" visual="" name="HXID" type="String" path="HXID" number="0"/>
+    <Child leaf="1" visual="" name="HYID" type="String" path="HYID" number="0"/>
+    <Child leaf="1" visual="" name="HZID" type="String" path="HZID" number="0"/>
+    <Child leaf="1" visual="" name="EXID" type="String" path="EXID" number="0"/>
+    <Child leaf="1" visual="" name="EYID" type="String" path="EYID" number="0"/>
+    <Child leaf="1" visual="" name="RXID" type="String" path="RXID" number="0"/>
+    <Child leaf="1" visual="" name="RYID" type="String" path="RYID" number="0"/>
+    <Child leaf="1" visual="" name="TypeUsed" type="String" path="TypeUsed" number="0"/>
+    <Child leaf="1" visual="" name="CheckSum" type="Double" path="CheckSum" number="0"/>
+    <Child leaf="0" visual="" name="Data" type="TEDIData" path="Data" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDIBlock" root="0" name="Block">
+    <Child leaf="1" visual="" name="Name" type="String" path="Name" number="0"/>
+    <Child leaf="1" visual="" name="Count" type="Integer" path="Count" number="0"/>
+    <Child leaf="1" visual="" name="TypeEstimationUsed" type="String" path="TypeEstimationUsed" number="0"/>
+    <Child leaf="0" visual="" name="Data" type="TEDIData" path="Data" number="0"/>
+    <Child leaf="1" visual="" name="Rotation" type="String" path="Rotation" number="0"/>
+    <Child leaf="1" visual="" name="TypeUsed" type="String" path="TypeUsed" number="0"/>
+    <Child leaf="1" visual="" name="TypeInversion" type="String" path="TypeInversion" number="0"/>
+    <Child leaf="1" visual="" name="Order" type="String" path="Order" number="0"/>
+    <Child leaf="1" visual="" name="PredID" type="String" path="PredID" number="0"/>
+    <Child leaf="1" visual="" name="AmpOrPower" type="String" path="AmpOrPower" number="0"/>
+    <Child leaf="1" visual="" name="DepthUnits" type="String" path="DepthUnits" number="0"/>
+    <Child leaf="1" visual="" name="EUnits" type="String" path="EUnits" number="0"/>
+    <Child leaf="1" visual="" name="HUnits" type="String" path="HUnits" number="0"/>
+    <Child leaf="1" visual="" name="EXID" type="String" path="EXID" number="0"/>
+    <Child leaf="1" visual="" name="HXID" type="String" path="HXID" number="0"/>
+    <Child leaf="1" visual="" name="HYID" type="String" path="HYID" number="0"/>
+    <Child leaf="1" visual="" name="HZID" type="String" path="HZID" number="0"/>
+    <Child leaf="1" visual="" name="EYID" type="String" path="EYID" number="0"/>
+    <Child leaf="1" visual="" name="Frequency" type="Double" path="Frequency" number="0"/>
+    <Child leaf="1" visual="" name="BandWidth" type="Double" path="BandWidth" number="0"/>
+    <Child leaf="1" visual="" name="AvgTime" type="Double" path="AvgTime" number="0"/>
+    <Child leaf="1" visual="" name="AvgFreq" type="Double" path="AvgFreq" number="0"/>
+    <Child leaf="1" visual="" name="DipoleLength" type="Double" path="DipoleLength" number="0"/>
+    <Child leaf="1" visual="" name="RXID" type="String" path="RXID" number="0"/>
+    <Child leaf="1" visual="" name="RYID" type="String" path="RYID" number="0"/>
+    <Child leaf="1" visual="" name="ID" type="String" path="ID" number="0"/>
+    <Child leaf="1" visual="" name="Band" type="String" path="Band" number="0"/>
+    <Child leaf="1" visual="" name="EPredicted" type="String" path="EPredicted" number="0"/>
+    <Child leaf="1" visual="" name="SampleRate" type="Double" path="SampleRate" number="0"/>
+    <Child leaf="1" visual="" name="SegNumber" type="Integer" path="SegNumber" number="0"/>
+    <Child leaf="1" visual="" name="MeasID1" type="String" path="MeasID1" number="0"/>
+    <Child leaf="1" visual="" name="MeasID2" type="String" path="MeasID2" number="0"/>
+    <Child leaf="1" visual="" name="MeasID" type="String" path="MeasID" number="0"/>
+    <Child leaf="1" visual="" name="NumberChannels" type="Integer" path="NumberChannels" number="0"/>
+    <Child leaf="1" visual="" name="NumberPoints" type="Integer" path="NumberPoints" number="0"/>
+    <Child leaf="1" visual="" name="MultiplexType" type="String" path="MultiplexType" number="0"/>
+    <Child leaf="1" visual="" name="CheckSum" type="Double" path="CheckSum" number="0"/>
+    <Child leaf="1" visual="" name="BlockType" type="Integer" path="BlockType" number="0"/>
+    <Child leaf="1" visual="" name="HPredicted" type="String" path="HPredicted" number="0"/>
+    <Child leaf="1" visual="" name="NumberFrequencies" type="Integer" path="NumberFrequencies" number="0"/>
+    <Child leaf="1" visual="" name="SpectraRotation" type="String" path="SpectraRotation" number="0"/>
+  </XMLClass>
+  <XMLClass type="TEDIData" root="0" name="Data">
+    <Child leaf="1" visual="" name="Data" type="Double" path="data" number="2"/>
+  </XMLClass>
+</XML2Code>

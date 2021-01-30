@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="EMPro" using="EMSite EMEquipment">
+  <XMLClass type="TEMPro" Root="1" name="EMPro" abstract="0" path="EMPro">
+    <Child name="Name" type="String" path="Name" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Path" type="String" path="Path" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="PassWord" type="String" path="PassWord" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="SiteGroup" type="TSiteGroup" path="SiteGroup" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Equipments" type="TEMEquipments" path="Equipments" number="2" leaf="0" visual="1" virtual="0"/>
+  </XMLClass>
+  <XMLClass type="TEMSiteGroup" Root="1" name="SiteGroup" abstract="0" path="SiteGroup">
+    <Child name="Name" type="String" path="Name" number="2" leaf="0" visual="1" virtual="0"/>
+    <Child name="Description" type="String" path="Description" number="1" leaf="1" visual="1" virtual="0"/>
+    <Child name="Site" type="TEMSite" path="Site" number="2" leaf="0" visual="0" virtual="1"/>
+  </XMLClass>
+  <XMLClass type="TEMEquipments" Root="1" name="Equipments" abstract="0" path="Equipments">
+    <Child name="Box" type="TEMBox" path="Box" number="2" leaf="0" visual="1"/>
+    <Child name="Sensor" type="TEMSensor" path="Sensor" number="2" leaf="0" visual="1"/>
+  </XMLClass>
+</XML2Code>

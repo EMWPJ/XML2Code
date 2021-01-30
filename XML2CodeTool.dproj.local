@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.974,D:\D103\XML2CodeTool\Unit2.pas=D:\D103\XML2CodeTool\Src\Core\XML2CodeClassEditor.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.181,=D:\D103\XML2CodeTool\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.561,=D:\D103\XML2CodeTool\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.347,=D:\D103\XML2CodeTool\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.882,D:\D103\XML2CodeTool\Src\XMLTypes.pas=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.244,D:\D103\XML2CodeTool\Src\XMLTypes.pas=D:\D103\XML2CodeTool\Src\Core\XMLTypes.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.070,D:\D103\XML2CodeTool\Src\XMLCore.pas=D:\D103\XML2CodeTool\Src\Core\XMLCore.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.711,=D:\D103\XML2CodeTool\Src\Frames\TextEditorFrame.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.894,=D:\D103\XML2CodeTool\Src\XML2Code\XML2Code.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.217,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.776,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.964,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.948,D:\D103\XML2CodeTool\Src\Tool\XML2Code.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.997,D:\D103\XML2CodeTool\Src\Core\XMLInspector.pas=D:\D103\XML2CodeTool\Src\Core\XMLInspectorFrame.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.489,=D:\D103\XML2CodeTool\Src\XML2Code\XML2CodeFrame.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.854,D:\D103\XML2CodeTool\Src\Forms\LinesEditorForm.pas=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.378,D:\D103\XML2CodeTool\Src\Forms\TextEditorForm.fmx=D:\D103\XML2CodeTool\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.219,D:\D103\XML2CodeTool\Src\Frames\LinesEditor.fmx=D:\D103\XML2CodeTool\Unit2.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.292,D:\D103\XML2CodeTool\XML2CodeToolForm.pas=C:\Users\w4784\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.221,D:\D103\XML2CodeTool\Unit1.fmx=D:\D103\XML2CodeTool\Src\Frames\XMLTreeFrame.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.731,D:\D103\XML2CodeTool\Src\XML2Code.pas=D:\D103\XML2CodeTool\Src\Tool\XML2Code.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.428,=C:\Users\w4784\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.292,D:\D103\XML2CodeTool\XML2CodeToolForm.fmx=C:\Users\w4784\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.831,D:\D103\XML2CodeTool\Src\Core\XMLTypes.pas=D:\D103\XML2CodeTool\Src\Core\XMLLeafTypes.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.333,D:\D103\XML2CodeTool\Src\WXML.pas=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.382,D:\D103\XML2CodeTool\Src\WXML.pas=D:\D103\XML2CodeTool\Src\XMLCore.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.997,D:\D103\XML2CodeTool\Src\Core\XMLInspector.fmx=D:\D103\XML2CodeTool\Src\Core\XMLInspectorFrame.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.097,=D:\D103\XML2CodeTool\Src\XML2Code\XML2CodeBase.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.557,D:\D103\XML2CodeTool\Unit1.fmx=D:\D103\XML2CodeTool\Src\Core\XMLInspector.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.330,=E:\D103\XML2CodeTool\Src\Core\XMLTree.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.280,D:\D103\XML2CodeTool\XML2CodeTool.dproj=C:\Users\w4784\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.014,D:\D103\XML2CodeTool\Src\Tool\XML2CodeBase.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.827,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.431,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Core\XMLInspector.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.378,D:\D103\XML2CodeTool\Src\Forms\TextEditorForm.pas=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.987,D:\D103\XML2CodeTool\Src\Frames\XMLTreeFrame.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.726,D:\D103\XML2CodeTool\Src\Frames\LinesEditorFrame.fmx=D:\D103\XML2CodeTool\Src\Frames\LinesEditor.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.559,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\XML2Code.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.072,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Core\XMLEvent.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.557,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Core\XMLInspector.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.234,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Core\XMLInspector.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.320,D:\D103\XML2CodeTool\Src\XMLConvert.pas=D:\D103\XML2CodeTool\Src\Core\XMLConvert.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.854,D:\D103\XML2CodeTool\Src\Forms\LinesEditorForm.fmx=D:\D103\XML2CodeTool\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.177,D:\D103\XML2CodeTool\Src\Core\XMLConvert.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.974,D:\D103\XML2CodeTool\Unit2.fmx=D:\D103\XML2CodeTool\Src\Core\XML2CodeClassEditor.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.219,D:\D103\XML2CodeTool\Src\Frames\LinesEditor.pas=D:\D103\XML2CodeTool\Unit2.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.726,D:\D103\XML2CodeTool\Src\Frames\LinesEditorFrame.pas=D:\D103\XML2CodeTool\Src\Frames\LinesEditor.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.566,D:\D103\XML2CodeTool\Src\Core\XMLInspectorFrame.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.396,D:\D103\XML2CodeTool\Src\XML2CodeBase.pas=D:\D103\XML2CodeTool\Src\Tool\XML2CodeBase.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.449,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.303,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.531,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.633,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.121,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.017,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.647,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.714,D:\D103\XML2CodeTool\Unit1.pas=</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.358,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.384,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.221,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Frames\XMLTreeFrame.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.565,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\Core\ClientScreen.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.631,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\XML2CodeBase.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.297,D:\D103\XML2CodeTool\Unit1.pas=D:\D103\XML2CodeTool\Src\XMLConvert.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.183,=D:\D103\XML2CodeTool\Unit1.pas</Transaction>
+    <Transaction>2021/01/18 14:08:29.000.250,=D:\D103\XML2CodeTool\ModelSupport_XML2CodeTool\default.txaPackage</Transaction>
+    <Transaction>2021/01/18 14:08:47.000.366,=D:\D103\XML2CodeTool\ModelSupport_XML2CodeTool\default.txvpck</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

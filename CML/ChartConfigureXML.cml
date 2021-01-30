@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<XML2Code name="ChartConfigureXML">
+  <XMLClass type="TCCML" root="1" name="ccml">
+    <Child leaf="0" visual="1" name="Series" type="TCCMLSeries" path="Series" number="2" />
+    <Child leaf="0" visual="1" name="Axis" type="TCCMLAxis" path="Axis" number="2" />
+  </XMLClass>
+  <XMLClass type="TCCMLSeries" root="0" name="Series">
+    <Child leaf="1" visual="1" name="LineWidth" type="Integer" path="LineWidth" number="1" />
+    <Child leaf="1" visual="1" name="Color" type="TColor" path="Color" number="1" />
+  </XMLClass>
+  <XMLClass type="TCCMLAxis" root="0" name="Axises" />
+</XML2Code>

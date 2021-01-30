@@ -1,0 +1,224 @@
+object FrameWChart: TFrameWChart
+  Size.Width = 567.000000000000000000
+  Size.Height = 481.000000000000000000
+  Size.PlatformDefault = False
+  object Chart: TChart
+    BackWall.Color = claWhite
+    BackWall.Transparent = False
+    Border.Visible = True
+    Foot.Font.Size = 9.750000000000000000
+    Foot.Font.Style = [fsBold]
+    Foot.Font.Color = claBlack
+    Foot.Font.Brush.Color = claBlack
+    Foot.Font.StyleExt = {00070000000000000004000000}
+    LeftWall.Color = claWhite
+    Legend.CheckBoxes = True
+    Legend.DividingLines.Color = claWhite
+    Legend.DividingLines.Fill.Color = claWhite
+    Legend.Font.Size = 9.000000000000000000
+    Legend.FontSeriesColor = True
+    Legend.ResizeChart = False
+    Legend.Shadow.Color = claGray
+    Legend.Shadow.Transparency = 0
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    MarginBottom = 0
+    MarginLeft = 0
+    MarginRight = 0
+    MarginTop = 0
+    MarginUnits = muPixels
+    PrintProportional = False
+    RightWall.Color = claWhite
+    ScrollMouseButton = mbLeft
+    SubFoot.Font.Color = claBlack
+    SubFoot.Font.Brush.Color = claBlack
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    SubTitle.Font.Color = claBlack
+    SubTitle.Font.Brush.Color = claBlack
+    Title.Font.Size = 9.750000000000000000
+    Title.Font.Style = [fsBold]
+    Title.Font.Color = claBlack
+    Title.Font.Brush.Color = claBlack
+    Title.Font.StyleExt = {00070000000000000004000000}
+    Title.Text.Strings = (
+      'TChart')
+    Title.Visible = False
+    OnClickAxis = ChartClickAxis
+    BottomAxis.Grid.Color = claBlack
+    BottomAxis.Grid.Fill.Color = claBlack
+    BottomAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    BottomAxis.LabelsSeparation = 20
+    BottomAxis.MaximumRound = True
+    BottomAxis.MinimumRound = True
+    BottomAxis.MinorGrid.Color = xFF6A6A6A
+    BottomAxis.MinorGrid.Fill.Color = xFF6A6A6A
+    BottomAxis.MinorGrid.SmallDots = True
+    BottomAxis.MinorGrid.Visible = True
+    BottomAxis.MinorTickCount = 9
+    BottomAxis.MinorTickLength = -3
+    BottomAxis.MinorTicks.Color = claBlack
+    BottomAxis.MinorTicks.Fill.Color = claBlack
+    BottomAxis.TickInnerLength = 6
+    BottomAxis.TickLength = 0
+    BottomAxis.Ticks.Color = claBlack
+    BottomAxis.Ticks.Fill.Color = claBlack
+    BottomAxis.Ticks.SmallDots = True
+    BottomAxis.TicksInner.Color = claBlack
+    BottomAxis.TicksInner.Fill.Color = claBlack
+    DepthAxis.Grid.Color = claBlack
+    DepthAxis.Grid.Fill.Color = claBlack
+    DepthAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    DepthAxis.MinorTickLength = -3
+    DepthAxis.MinorTicks.Color = claBlack
+    DepthAxis.MinorTicks.Fill.Color = claBlack
+    DepthAxis.TickInnerLength = 6
+    DepthAxis.TickLength = 0
+    DepthAxis.Ticks.Color = claBlack
+    DepthAxis.Ticks.Fill.Color = claBlack
+    DepthAxis.TicksInner.Color = claBlack
+    DepthAxis.TicksInner.Fill.Color = claBlack
+    DepthTopAxis.Grid.Color = claBlack
+    DepthTopAxis.Grid.Fill.Color = claBlack
+    DepthTopAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    DepthTopAxis.MinorTickLength = -3
+    DepthTopAxis.MinorTicks.Color = claBlack
+    DepthTopAxis.MinorTicks.Fill.Color = claBlack
+    DepthTopAxis.TickInnerLength = 6
+    DepthTopAxis.TickLength = 0
+    DepthTopAxis.Ticks.Color = claBlack
+    DepthTopAxis.Ticks.Fill.Color = claBlack
+    DepthTopAxis.TicksInner.Color = claBlack
+    DepthTopAxis.TicksInner.Fill.Color = claBlack
+    LeftAxis.Grid.Color = xFF545252
+    LeftAxis.Grid.Fill.Color = xFF545252
+    LeftAxis.Grid.SmallDots = True
+    LeftAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    LeftAxis.MaximumRound = True
+    LeftAxis.MinimumRound = True
+    LeftAxis.MinorGrid.SmallDots = True
+    LeftAxis.MinorTickCount = 9
+    LeftAxis.MinorTickLength = -3
+    LeftAxis.MinorTicks.Color = claBlack
+    LeftAxis.MinorTicks.Fill.Color = claBlack
+    LeftAxis.TickInnerLength = 6
+    LeftAxis.TickLength = 0
+    LeftAxis.Ticks.Color = claBlack
+    LeftAxis.Ticks.Fill.Color = claBlack
+    LeftAxis.Ticks.SmallDots = True
+    LeftAxis.TicksInner.Color = claBlack
+    LeftAxis.TicksInner.Fill.Color = claBlack
+    Panning.MouseWheel = pmwNone
+    RightAxis.Grid.Color = claBlack
+    RightAxis.Grid.Fill.Color = claBlack
+    RightAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    RightAxis.MinorTickLength = -3
+    RightAxis.MinorTicks.Color = claBlack
+    RightAxis.MinorTicks.Fill.Color = claBlack
+    RightAxis.TickInnerLength = 6
+    RightAxis.TickLength = 0
+    RightAxis.Ticks.Color = claBlack
+    RightAxis.Ticks.Fill.Color = claBlack
+    RightAxis.TicksInner.Color = claBlack
+    RightAxis.TicksInner.Fill.Color = claBlack
+    TopAxis.Grid.Color = xFF554D4D
+    TopAxis.Grid.Fill.Color = xFF554D4D
+    TopAxis.Grid.Visible = False
+    TopAxis.LabelsFormat.Font.Size = 10.000000000000000000
+    TopAxis.MinorTickLength = -3
+    TopAxis.MinorTicks.Color = claBlack
+    TopAxis.MinorTicks.Fill.Color = claBlack
+    TopAxis.TickInnerLength = 6
+    TopAxis.TickLength = 0
+    TopAxis.Ticks.Color = claBlack
+    TopAxis.Ticks.Fill.Color = claBlack
+    TopAxis.TicksInner.Color = claBlack
+    TopAxis.TicksInner.Fill.Color = claBlack
+    View3D = False
+    View3DOptions.ZoomText = ztNo
+    Zoom.AnimatedSteps = 4
+    Zoom.Brush.Kind = None
+    Zoom.MouseButton = mbMiddle
+    Zoom.MouseWheel = pmwNormal
+    Zoom.Pen.Style = psDot
+    Zoom.Pen.EndStyle = esRound
+    Zoom.Pen.Fill.Color = claSilver
+    Zoom.Pen.SmallDots = True
+    Align = Client
+    BevelOuter = bvNone
+    Color = claWhite
+    TabOrder = 0
+    PopupMenu = PopChart
+    Size.Width = 567.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 5
+  end
+  object PopChart: TPopupMenu
+    Left = 32
+    Top = 31
+    object ExportToClipBoardMenu: TMenuItem
+      ShortCut = 16451
+      Text = 'Export To Clipboard'
+      OnClick = ExportToClipBoardMenuClick
+    end
+    object ChartEditorMenu: TMenuItem
+      Text = 'Chart Editor'
+      OnClick = ChartEditorShow
+    end
+    object RestoreAxisMenu: TMenuItem
+      Text = 'Restore Axis'
+      OnClick = RestoreAxisMenuClick
+    end
+    object RecordAxisMenu: TMenuItem
+      Text = 'Record Axis'
+      OnClick = RecordAxisMenuClick
+    end
+    object AutoAxisMenu: TMenuItem
+      Text = 'Auto Axis'
+      OnClick = AutoAxis
+    end
+    object AutoXAxisMenu: TMenuItem
+      Text = 'Auto X Axis'
+      OnClick = AutoXAxis
+    end
+    object AutoYAxisMenu: TMenuItem
+      Text = 'Auto Y Axis'
+      OnClick = AutoYAxis
+    end
+    object ZoomXMenu: TMenuItem
+      IsChecked = True
+      Text = 'Zoom X'
+      OnClick = ZoomXMenuClick
+    end
+    object ZoomYMenu: TMenuItem
+      IsChecked = True
+      Text = 'Zoom Y'
+      OnClick = ZoomYMenuClick
+    end
+    object XLogMenu: TMenuItem
+      Text = 'X Log'
+      OnClick = XLogMenuClick
+    end
+    object YLogMenu: TMenuItem
+      Text = 'Y Log'
+      OnClick = YLogMenuClick
+    end
+    object AddTempLineMenu: TMenuItem
+      Text = 'AddTempLineMenu'
+      OnClick = AddTempLineMenuClick
+    end
+    object AutoZAxisMenu: TMenuItem
+      Text = 'Auto Z Axis'
+      Visible = False
+      OnClick = AutoZAxis
+    end
+  end
+  object ChartEditor: TChartEditor
+    Chart = Chart
+    GalleryHeight = 0
+    GalleryWidth = 0
+    Height = 0
+    Width = 0
+    Left = 87
+    Top = 32
+  end
+end

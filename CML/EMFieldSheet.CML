@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="EMFieldSheet">
+  <XMLClass name="MTU" type="TFieldSheetMTU" root="1">
+    <Child leaf="1" visual="1" name="Method" type="String" path="Method" number="1"/>
+    <Child leaf="1" visual="1" name="SiteName" type="String" path="SiteName" number="1"/>
+    <Child leaf="1" visual="1" name="FileName" type="String" path="FileName" number="1"/>
+    <Child leaf="1" visual="1" name="Latitude" type="String" path="Latitude" number="1"/>
+    <Child leaf="1" visual="1" name="Longitude" type="String" path="Longitude" number="1"/>
+    <Child leaf="1" visual="1" name="Instrument" type="String" path="Instrument" number="1"/>
+    <Child leaf="1" visual="1" name="InstrumentID" type="String" path="InstrumentID" number="1"/>
+    <Child leaf="1" visual="1" name="SensorHx" type="String" path="SensorHx" number="1"/>
+    <Child leaf="1" visual="1" name="SensorHy" type="String" path="SensorHy" number="1"/>
+    <Child leaf="1" visual="1" name="SensorHz" type="String" path="SensorHz" number="1"/>
+    <Child leaf="1" visual="1" name="HighBeginTime" type="String" path="HighBeginTime" number="1"/>
+    <Child leaf="1" visual="1" name="HighEndTime" type="String" path="HighEndTime" number="1"/>
+    <Child leaf="1" visual="1" name="LowerBeginTime" type="String" path="LowerBeginTime" number="1"/>
+    <Child leaf="1" visual="1" name="LowerEndTime" type="String" path="LowerEndTime" number="1"/>
+    <Child leaf="1" visual="1" name="NotchFilter" type="Integer" path="NotchFilter" number="1"/>
+    <Child leaf="1" visual="1" name="EGain" type="Integer" path="EGain" number="1"/>
+    <Child leaf="1" visual="1" name="HGain" type="Integer" path="HGain" number="1"/>
+    <Child leaf="1" visual="1" name="ECoupling" type="Integer" path="ECoupling" number="1"/>
+    <Child leaf="1" visual="1" name="HCoupling" type="Integer" path="HCoupling" number="1"/>
+    <Child leaf="1" visual="1" name="LowerFilter" type="Integer" path="LowerFilter" number="1"/>
+    <Child leaf="1" visual="1" name="Lev2" type="Integer" path="Lev2" number="1"/>
+    <Child leaf="1" visual="1" name="Lev3" type="Integer" path="Lev3" number="1"/>
+    <Child leaf="1" visual="1" name="Lev4" type="Integer" path="Lev4" number="1"/>
+    <Child leaf="1" visual="1" name="Interval" type="Integer" path="Interval" number="1"/>
+    <Child leaf="1" visual="1" name="ExAzimuth" type="Integer" path="ExAzimuth" number="1"/>
+    <Child leaf="1" visual="1" name="EyAzimuth" type="Integer" path="EyAzimuth" number="1"/>
+    <Child leaf="1" visual="1" name="HxAzimuth" type="Integer" path="HxAzimuth" number="1"/>
+    <Child leaf="1" visual="1" name="HyAzimuth" type="Integer" path="HyAzimuth" number="1"/>
+    <Child leaf="1" visual="1" name="ExLength" type="Integer" path="ExLength" number="1"/>
+    <Child leaf="1" visual="1" name="EyLength" type="Integer" path="EyLength" number="1"/>
+    <Child leaf="1" visual="1" name="ExResistance" type="Integer" path="ExResistance" number="1"/>
+    <Child leaf="1" visual="1" name="EyResistance" type="Integer" path="EyResistance" number="1"/>
+    <Child leaf="1" visual="1" name="ExAC" type="Double" path="ExAC" number="1"/>
+    <Child leaf="1" visual="1" name="ExDC" type="Double" path="ExDC" number="1"/>
+    <Child leaf="1" visual="1" name="EyAC" type="Double" path="EyAC" number="1"/>
+    <Child leaf="1" visual="1" name="EyDC" type="Double" path="EyDC" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="1" visual="1" name="Operator" type="String" path="Operator" number="1"/>
+    <Child leaf="1" visual="1" name="Recorder" type="String" path="Recorder" number="1"/>
+    <Child leaf="1" visual="1" name="Photos" type="String" path="Photos" number="1"/>
+  </XMLClass>
+</XML2Code>

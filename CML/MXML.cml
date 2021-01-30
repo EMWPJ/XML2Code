@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="MXML">
+  <XMLClass type="TMXML" root="1" name="mxml">
+    <Child leaf="1" visual="1" name="Name" type="String" path="" number="1" />
+    <Child leaf="1" visual="1" name="Description" type="String" path="desc" number="0" />
+    <Child leaf="0" visual="1" name="Folder" type="TXMLFolder" path="Folder" number="2" />
+  </XMLClass>
+  <XMLClass type="TXMLFolder" root="0" name="Folder">
+    <Child leaf="0" visual="1" name="Folder" type="TXMLFolder" path="Folder" number="2" />
+    <Child leaf="0" visual="1" name="Xmldoc" type="TXMLDocument" path="xml" number="0" />
+    <Child leaf="1" visual="1" name="Name" type="String" path="" number="1" />
+    <Child leaf="1" visual="1" name="Description" type="String" path="desc" number="0" />
+  </XMLClass>
+  <XMLClass type="TXMLDocument" root="0" name="Document">
+    <Child leaf="1" visual="1" name="Name" type="String" path="" number="1" />
+    <Child leaf="1" visual="1" name="XMLType" type="String" path="type" number="1" />
+    <Child leaf="1" visual="1" name="Description" type="String" path="desc" number="0" />
+    <Child leaf="1" visual="1" name="Dictionary" type="String" path="dir" number="1" />
+  </XMLClass>
+</XML2Code>

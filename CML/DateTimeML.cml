@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML2Code name="DateTimeML">
+  <XMLClass type="TDateTimeML" root="1" name="DateTime">
+    <Child leaf="0" name="DateTime" type="TXDateTime" path="DateTime" number="2" />
+    <Child leaf="0" name="Date" type="TXDate" path="Date" number="2" />
+    <Child leaf="0" name="Time" type="TXTime" path="Time" number="2" />
+  </XMLClass>
+  <XMLClass type="TXDateTime" root="0" name="XDateTime">
+    <Child leaf="1" name="Year" type="Integer" path="@year" number="1" />
+    <Child leaf="1" name="Month" type="Integer" path="@month" number="1" />
+    <Child leaf="1" name="Day" type="Integer" path="@day" number="1" />
+    <Child leaf="1" name="Hour" type="Integer" path="@hour" number="1" />
+    <Child leaf="1" name="Minute" type="Integer" path="@minute" number="1" />
+    <Child leaf="1" name="Second" type="Integer" path="@secod" number="1" />
+    <Child leaf="1" name="Millisecond" type="Integer" path="@millisecond" number="0" />
+  </XMLClass>
+  <XMLClass type="TXDate" root="0" name="XDate">
+    <Child leaf="1" name="Year" type="Integer" path="@year" number="1" />
+    <Child leaf="1" name="Month" type="Integer" path="@month" number="1" />
+    <Child leaf="1" name="Day" type="Integer" path="@day" number="1" />
+  </XMLClass>
+  <XMLClass type="TXTime" root="0" name="XTime">
+    <Child leaf="1" name="Hour" type="Integer" path="@hour" number="1" />
+    <Child leaf="1" name="Minute" type="Integer" path="@minute" number="1" />
+    <Child leaf="1" name="Second" type="Integer" path="@secod" number="1" />
+    <Child leaf="1" name="Millisecond" type="Integer" path="@millisecond" number="0" />
+  </XMLClass>
+</XML2Code>

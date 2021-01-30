@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<XML2Code name="MTML">
+  <XMLClass type="TMTML" root="1" name="MTML">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="0" visual="1" name="Project" type="TMTProject" path="Project" number="1"/>
+    <Child leaf="0" visual="1" name="Equipents" type="TMTEquipents" path="Equipents" number="1"/>
+    <Child leaf="0" visual="1" name="Acquisition" type="TMTAcquisition" path="Acquisition" number="1"/>
+    <Child leaf="0" visual="1" name="Processing" type="TMTProcessing" path="Processing" number="1"/>
+    <Child leaf="0" visual="1" name="Inversion" type="TMTInversion" path="Inversion" number="1"/>
+    <Child leaf="0" visual="1" name="Appendix" type="TMTAppendix" path="Appendix" number="1"/>
+    <Child leaf="0" visual="1" name="Log" type="TMTLog" path="Log" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTProject" root="0" name="Project">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="1" visual="1" name="ID" type="String" path="@id" number="1"/>
+    <Child leaf="1" visual="1" name="Target" type="String" path="Target" number="1"/>
+    <Child leaf="1" visual="1" name="BeginTime" type="TDateTime" path="BeginTime" number="1"/>
+    <Child leaf="1" visual="1" name="EndTime" type="TDateTime" path="EndTime" number="1"/>
+    <Child leaf="0" visual="1" name="Principal" type="TMTPerson" path="Principal" number="1"/>
+    <Child leaf="0" visual="1" name="Participant" type="TMTPerson" path="Participant" number="2"/>
+    <Child leaf="0" visual="1" name="Logs" type="TMTLogs" path="Logs" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTEquipents" root="0" name="Equipents">
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="0" visual="1" name="Instrument" type="TMTInstrument" path="Instrument" number="2"/>
+    <Child leaf="0" visual="1" name="Sensor" type="TMTSensor" path="Sensor" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTAcquisition" root="0" name="Acquisition">
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="0" visual="1" name="AcquisitionPoint" type="TMTAcquisitionPoint" path="Point" number="2"/>
+    <Child leaf="0" visual="1" name="Logs" type="TMTLogs" path="Logs" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTProcessing" root="0" name="Processing">
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="0" visual="1" name="ProcessingPoint" type="TMTProcessingPoint" path="Point" number="2"/>
+    <Child leaf="0" visual="1" name="Logs" type="TMTLogs" path="Logs" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTInversions" root="0" name="Inversions">
+    <Child leaf="0" visual="1" name="Inversion" type="TMTInversion" path="Inversion" number="2"/>
+    <Child leaf="0" visual="1" name="Logs" type="TMTLogs" path="Logs" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTInversion" root="0" name="Inversion">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="1" visual="1" name="ID" type="String" path="@id" number="1"/>
+    <Child leaf="0" visual="1" name="Parameters" type="TMTParameters" path="Parameters" number="1"/>
+    <Child leaf="0" visual="1" name="InitModel" type="TMTModel" path="InitModel" number="1"/>
+    <Child leaf="0" visual="1" name="FinaModel" type="TMTModel" path="FinaModel" number="1"/>
+    <Child leaf="0" visual="1" name="Logs" type="TMTLogs" path="Logs" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTAppendixes" root="0" name="Appendixes">
+    <Child leaf="0" visual="1" name="Appendix" type="TMTAppendix" path="Appendix" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTAppendix" root="0" name="Appendix">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Value" type="String" path="" number="1"/>
+    <Child leaf="1" visual="1" name="Link" type="String" path="@link" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTInstrument" root="0" name="Instrument">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="1" visual="1" name="ID" type="String" path="@id" number="1"/>
+    <Child leaf="1" visual="1" name="Calibration" type="String" path="Calibration" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTSensor" root="0" name="Sensor">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+    <Child leaf="1" visual="1" name="Description" type="String" path="Description" number="1"/>
+    <Child leaf="1" visual="1" name="Comment" type="String" path="Comment" number="1"/>
+    <Child leaf="1" visual="1" name="ID" type="String" path="@id" number="1"/>
+    <Child leaf="1" visual="1" name="Calibration" type="String" path="Calibration" number="1"/>
+    <Child leaf="1" visual="1" name="Factory" type="String" path="Factory" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTAcquisitionPoint" root="0" name="AcquisitionPoint">
+    <Child leaf="0" visual="1" name="Parameters" type="TMTParameters" path="Parameters" number="1"/>
+    <Child leaf="1" visual="1" name="Operator" type="String" path="Operator" number="1"/>
+    <Child leaf="1" visual="1" name="Surrounding" type="String" path="Surrounding" number="1"/>
+    <Child leaf="1" visual="1" name="Photos" type="TMTFile" path="Photos" number="2"/>
+    <Child leaf="1" visual="1" name="Data" type="TMTFile" path="Data" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTProcessingPoint" root="0" name="ProcessingPoint">
+    <Child leaf="0" visual="1" name="Parameters" type="TMTParameters" path="Parameters" number="1"/>
+    <Child leaf="1" visual="1" name="Processor" type="String" path="Processor" number="1"/>
+    <Child leaf="1" visual="1" name="Data" type="TMTFile" path="Data" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTParameters" root="0" name="Parameters">
+    <Child leaf="0" visual="1" name="Parameter" type="TMTParameter" path="Parameter" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTParameter" root="0" name="Parameter">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Value" type="String" path="" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTLogs" root="0" name="Logs">
+    <Child leaf="0" visual="1" name="Log" type="TMTLog" path="Log" number="2"/>
+  </XMLClass>
+  <XMLClass type="TMTLog" root="0" name="Log">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="LogTime" type="TDateTime" path="LogTime" number="1"/>
+    <Child leaf="1" visual="1" name="Infomation" type="String" path="Infomation" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTEMTF" root="0" name="EMTF">
+    <Child leaf="1" visual="1" name="EMTFFile" type="TMTFile" path="EMTFFile" number="0"/>
+  </XMLClass>
+  <XMLClass type="TMTModel" root="0" name="Model">
+    <Child leaf="1" visual="1" name="Model" type="TMTFile" path="Model" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTPerson" root="0" name="Person">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="ID" type="String" path="@id" number="1"/>
+    <Child leaf="1" visual="1" name="Authority" type="String" path="Authority" number="1"/>
+    <Child leaf="1" visual="1" name="Password" type="String" path="Password" number="1"/>
+  </XMLClass>
+  <XMLClass type="TMTFile" root="0" name="File">
+    <Child leaf="1" visual="1" name="Name" type="String" path="@name" number="1"/>
+    <Child leaf="1" visual="1" name="Link" type="String" path="@link" number="1"/>
+    <Child leaf="1" visual="1" name="CheckCode" type="String" path="@code" number="1"/>
+  </XMLClass>
+</XML2Code>

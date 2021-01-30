@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<XML2Code name="SVG">
+  <XMLClass type="TSVG" root="1" name="svg">
+    <Child leaf="1" visual="1" name="Version" type="String" path="@version" number="1"/>
+    <Child leaf="1" visual="1" name="BaseProfile" type="String" path="@baseProfile" number="0"/>
+    <Child leaf="1" visual="1" name="Id" type="String" path="@id" number="0"/>
+    <Child leaf="1" visual="1" name="xmlns" type="String" path="@xmlns" number="1"/>
+    <Child leaf="1" visual="1" name="xmlnsxlink" type="String" path="@xmlns:xlink" number="0"/>
+    <Child leaf="1" visual="1" name="X" type="String" path="@x" number="0"/>
+    <Child leaf="1" visual="1" name="Y" type="String" path="@y" number="0"/>
+    <Child leaf="1" visual="1" name="Width" type="Integer" path="@width" number="0"/>
+    <Child leaf="1" visual="1" name="Height" type="Integer" path="@height" number="0"/>
+    <Child leaf="1" visual="1" name="viewBox" type="String" path="@viewBox" number="0"/>
+    <Child leaf="1" visual="1" name="xmlspace" type="String" path="@xml:space" number="0"/>
+    <Child leaf="0" visual="1" name="Group" type="TSVGGroup" path="g" number="2"/>
+    <Child leaf="0" visual="1" name="Rects" type="TSVGRect" path="rect" number="2"/>
+    <Child leaf="0" visual="1" name="Circles" type="TSVGcircle" path="circle" number="2"/>
+    <Child leaf="0" visual="1" name="Ellipses" type="TSVGellipse" path="ellipse" number="2"/>
+    <Child leaf="0" visual="1" name="Lines" type="TSVGline" path="line" number="2"/>
+    <Child leaf="0" visual="1" name="Polylines" type="TSVGpolyline" path="polyline" number="2"/>
+    <Child leaf="0" visual="1" name="Polygons" type="TSVGpolygon" path="polygon" number="2"/>
+    <Child leaf="0" visual="1" name="Path" type="TSVGpath" path="path" number="2"/>
+  </XMLClass>
+  <XMLClass type="TSVGGroup" root="0" name="SVGGroup">
+    <Child leaf="0" visual="1" name="Rects" type="TSVGRect" path="rect" number="2"/>
+    <Child leaf="0" visual="1" name="Circles" type="TSVGcircle" path="circle" number="2"/>
+    <Child leaf="0" visual="1" name="Ellipses" type="TSVGellipse" path="ellipse" number="2"/>
+    <Child leaf="0" visual="1" name="Lines" type="TSVGline" path="line" number="2"/>
+    <Child leaf="0" visual="1" name="Polylines" type="TSVGpolyline" path="polyline" number="2"/>
+    <Child leaf="0" visual="1" name="Polygons" type="TSVGpolygon" path="polygon" number="2"/>
+    <Child leaf="0" visual="1" name="Path" type="TSVGpath" path="path" number="2"/>
+  </XMLClass>
+  <XMLClass type="TSVGrect" root="0" name="SVGrect">
+    <Child leaf="1" visual="1" name="x" type="Integer" path="@x" number="1"/>
+    <Child leaf="1" visual="1" name="y" type="Integer" path="@y" number="1"/>
+    <Child leaf="1" visual="1" name="width" type="Integer" path="@width" number="1"/>
+    <Child leaf="1" visual="1" name="height" type="Integer" path="@height" number="1"/>
+    <Child leaf="1" visual="1" name="rx" type="Integer" path="@rx" number="0"/>
+    <Child leaf="1" visual="1" name="ry" type="Integer" path="@ry" number="0"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGcircle" root="0" name="SVGcircle">
+    <Child leaf="1" visual="1" name="cx" type="Integer" path="@cx" number="1"/>
+    <Child leaf="1" visual="1" name="cy" type="Integer" path="@cy" number="1"/>
+    <Child leaf="1" visual="1" name="r" type="Integer" path="@r" number="1"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGellipse" root="0" name="SVGellipse">
+    <Child leaf="1" visual="1" name="cx" type="Integer" path="@cx" number="1"/>
+    <Child leaf="1" visual="1" name="cy" type="Integer" path="@cy" number="1"/>
+    <Child leaf="1" visual="1" name="rx" type="Integer" path="@rx" number="1"/>
+    <Child leaf="1" visual="1" name="ry" type="Integer" path="@ry" number="1"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGline" root="0" name="SVGline">
+    <Child leaf="1" visual="1" name="x1" type="Integer" path="@x1" number="1"/>
+    <Child leaf="1" visual="1" name="y1" type="Integer" path="@y1" number="1"/>
+    <Child leaf="1" visual="1" name="x2" type="Integer" path="@x2" number="1"/>
+    <Child leaf="1" visual="1" name="y2" type="Integer" path="@y2" number="1"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGpolygon" root="0" name="SVGpolygon">
+    <Child leaf="1" visual="1" name="points" type="WPoint2Ds" path="@points" number="1"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGpolyline" root="0" name="SVGpolyline">
+    <Child leaf="1" visual="1" name="points" type="WPoint2Ds" path="@points" number="1"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGpath" root="0" name="SVGpath">
+    <Child leaf="1" visual="1" name="d" type="String" path="@d" number="1"/>
+    <Child leaf="1" visual="1" name="pathLength" type="String" path="@pathLength" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGtext" root="0" name="SVGtext">
+    <Child leaf="1" visual="1" name="x" type="Integer" path="@x" number="1"/>
+    <Child leaf="1" visual="1" name="y" type="Integer" path="@y" number="1"/>
+    <Child leaf="1" visual="1" name="dx" type="Integer" path="@dx" number="0"/>
+    <Child leaf="1" visual="1" name="dy" type="Integer" path="@dy" number="0"/>
+    <Child leaf="1" visual="1" name="fill" type="String" path="@fill" number="0"/>
+    <Child leaf="1" visual="1" name="transform" type="String" path="@transform" number="0"/>
+    <Child leaf="1" visual="1" name="text" type="String" path="" number="1"/>
+    <Child leaf="1" visual="1" name="style" type="String" path="@style" number="0"/>
+    <Child leaf="0" visual="1" name="animate" type="TSVGanimate" path="animate" number="2"/>
+    <Child leaf="1" visual="1" name="filter" type="String" path="@filter" number="1"/>
+    <Child leaf="1" visual="1" name="stroke" type="String" path="@stroke" number="0"/>
+    <Child leaf="1" visual="1" name="strokewidth" type="Integer" path="@stroke-width" number="0"/>
+    <Child leaf="1" visual="1" name="strokelinecap" type="String" path="@stroke-linecap" number="0"/>
+    <Child leaf="1" visual="1" name="strokedasharray" type="String" path="@stroke-dasharray" number="0"/>
+    <Child leaf="1" visual="1" name="textanchor" type="String" path="@text-anchor" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfilter" root="0" name="SVGfilter">
+    <Child leaf="0" visual="1" name="feBlend" type="TSVGfeBlend" path="feBlend" number="0"/>
+    <Child leaf="0" visual="1" name="feColorMatrix" type="TSVGfeColorMatrix" path="feColorMatrix" number="0"/>
+    <Child leaf="0" visual="1" name="feComponentTransfer" type="TSVGfeComponentTransfer" path="feComponentTransfer" number="0"/>
+    <Child leaf="0" visual="1" name="feComposite" type="TSVGfeComposite" path="feComposite" number="0"/>
+    <Child leaf="0" visual="1" name="feConvolveMatrix" type="TSVGfeConvolveMatrix" path="feConvolveMatrix" number="0"/>
+    <Child leaf="0" visual="1" name="feDiffuseLighting" type="TSVGfeDiffuseLighting" path="feDiffuseLighting" number="0"/>
+    <Child leaf="0" visual="1" name="feDisplacementMap" type="TSVGfeDisplacementMap" path="feDisplacementMap" number="0"/>
+    <Child leaf="0" visual="1" name="feDistantLight" type="TSVGfeDistantLight" path="feDistantLight" number="0"/>
+    <Child leaf="0" visual="1" name="feFlood" type="TSVGfeFlood" path="feFlood" number="0"/>
+    <Child leaf="0" visual="1" name="feFuncA" type="TSVGfeFuncA" path="feFuncA" number="0"/>
+    <Child leaf="0" visual="1" name="feFuncB" type="TSVGfeFuncB" path="feFuncB" number="0"/>
+    <Child leaf="0" visual="1" name="feFuncG" type="TSVGfeFuncG" path="feFuncG" number="0"/>
+    <Child leaf="0" visual="1" name="feFuncR" type="TSVGfeFuncR" path="feFuncR" number="0"/>
+    <Child leaf="0" visual="1" name="feGaussianBlur" type="TSVGfeGaussianBlur" path="feGaussianBlur" number="0"/>
+    <Child leaf="0" visual="1" name="feImage" type="TSVGfeImage" path="feImage" number="0"/>
+    <Child leaf="0" visual="1" name="feMerge" type="TSVGfeMerge" path="feMerge" number="0"/>
+    <Child leaf="0" visual="1" name="feMergeNode" type="TSVGfeMergeNode" path="feMergeNode" number="0"/>
+    <Child leaf="0" visual="1" name="feMorphology" type="TSVGfeMorphology" path="feMorphology" number="0"/>
+    <Child leaf="0" visual="1" name="feOffset" type="TSVGfeOffset" path="feOffset" number="0"/>
+    <Child leaf="0" visual="1" name="fePointLight" type="TSVGfePointLight" path="fePointLight" number="0"/>
+    <Child leaf="0" visual="1" name="feSpecularLighting" type="TSVGfeSpecularLighting" path="feSpecularLighting" number="0"/>
+    <Child leaf="0" visual="1" name="feSpotLight" type="TSVGfeSpotLight" path="feSpotLight" number="0"/>
+    <Child leaf="0" visual="1" name="feTile" type="TSVGfeTile" path="feTile" number="0"/>
+    <Child leaf="0" visual="1" name="feTurbulence" type="TSVGfeTurbulence" path="feTurbulence" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeBlend" root="0" name="SVGfeBlend">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeColorMatrix" root="0" name="SVGfeColorMatrix">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeComponentTransfer" root="0" name="SVGfeComponentTransfer">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeComposite" root="0" name="SVGfeComposite">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeConvolveMatrix" root="0" name="SVGfeConvolveMatrix">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeDiffuseLighting" root="0" name="SVGfeDiffuseLighting">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeDisplacementMap" root="0" name="SVGfeDisplacementMap">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeDistantLight" root="0" name="SVGfeDistantLight">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeFlood" root="0" name="SVGfeFlood">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeFuncA" root="0" name="SVGfeFuncA">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeFuncB" root="0" name="SVGfeFuncB">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeFuncG" root="0" name="SVGfeFuncG">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeFuncR" root="0" name="SVGfeFuncR">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeGaussianBlur" root="0" name="SVGfeGaussianBlur">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeImage" root="0" name="SVGfeImage">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeMerge" root="0" name="SVGfeMerge">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeMergeNode" root="0" name="SVGfeMergeNode">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeMorphology" root="0" name="SVGfeMorphology">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeOffset" root="0" name="SVGfeOffset">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfePointLight" root="0" name="SVGfePointLight">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeSpecularLighting" root="0" name="SVGfeSpecularLighting">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeSpotLight" root="0" name="SVGfeSpotLight">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeTile" root="0" name="SVGfeTile">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfeTurbulence" root="0" name="SVGfeTurbulence">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfont" root="0" name="SVGfont">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfontface" root="0" name="SVGfontface">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfontfaceformat" root="0" name="SVGfontfaceformat">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfontfacename" root="0" name="SVGfontfacename">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfontfacesrc" root="0" name="SVGfontfacesrc">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGfontfaceuri" root="0" name="SVGfontfaceuri">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGforeignObject" root="0" name="SVGforeignObject">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGglyph" root="0" name="SVGglyph">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGglyphRef" root="0" name="SVGglyphRef">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGhkern" root="0" name="SVGhkern">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGimage" root="0" name="SVGimage">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGlinearGradient" root="0" name="SVGlinearGradient">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGmarker" root="0" name="SVGmarker">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGmask" root="0" name="SVGmask">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGmetadata" root="0" name="SVGmetadata">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGmissingglyph" root="0" name="SVGmissingglyph">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGmpath" root="0" name="SVGmpath">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGpattern" root="0" name="SVGpattern">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGradialGradient" root="0" name="SVGradialGradient">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGscript" root="0" name="SVGscript">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGset" root="0" name="SVGset">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGstop" root="0" name="SVGstop">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGstyle" root="0" name="SVGstyle">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGswitch" root="0" name="SVGswitch">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGsymbol" root="0" name="SVGsymbol">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGtextPath" root="0" name="SVGtextPath">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGtitle" root="0" name="SVGtitle">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGtref" root="0" name="SVGtref">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGtspan" root="0" name="SVGtspan">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGuse" root="0" name="SVGuse">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGview" root="0" name="SVGview">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGvkern" root="0" name="SVGvkern">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGanchor" root="0" name="SVGanchor">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGaltGlyph" root="0" name="SVGaltGlyph">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGaltGlyphDef" root="0" name="SVGaltGlyphDef">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGaltGlyphItem" root="0" name="SVGaltGlyphItem">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGanimate" root="0" name="SVGanimate">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGanimateColor" root="0" name="SVGanimateColor">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGanimateMotion" root="0" name="SVGanimateMotion">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGanimateTransform" root="0" name="SVGanimateTransform">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGclipPath" root="0" name="SVGclipPath">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGcolorprofile" root="0" name="SVGcolorprofile">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGcursor" root="0" name="SVGcursor">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGdefinitionsrc" root="0" name="SVGdefinitionsrc">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGdefs" root="0" name="SVGdefs">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+  <XMLClass type="TSVGdesc" root="0" name="SVGdesc">
+    <Child leaf="1" visual="1" name="UnDefine" type="String" path="" number="0"/>
+  </XMLClass>
+</XML2Code>

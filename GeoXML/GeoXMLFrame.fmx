@@ -1,0 +1,64 @@
+object FrameGeoXML: TFrameGeoXML
+  Size.Width = 281.000000000000000000
+  Size.Height = 462.000000000000000000
+  Size.PlatformDefault = False
+  object SplitterBottom: TSplitter
+    Align = Bottom
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 325.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 3.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object GeoXMLMenuBar: TMenuBar
+    Size.Width = 281.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object NewGeoXMLButton: TMenuItem
+      Text = 'New GeoXML'
+      OnClick = NewGeoXML
+    end
+    object OpenGeoXMLButton: TMenuItem
+      Text = 'Open GeoXML'
+      OnClick = OpenGeoXML
+    end
+    object SaveGeoXMLButton: TMenuItem
+      Text = 'Save GeoXML'
+      OnClick = SaveGeoXML
+    end
+  end
+  object OpenDialogGeoXML: TOpenDialog
+    Filter = 'GeoXML|*.GeoXML'
+    Left = 16
+    Top = 96
+  end
+  object SaveDialogGeoXML: TSaveDialog
+    Filter = 'GeoXML|*.GeoXML'
+    Left = 104
+    Top = 96
+  end
+  object GeoXMLIns: TXMLInspector
+    Align = Bottom
+    Position.Y = 328.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 134.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 281.000000000000000000
+    Viewport.Height = 134.000000000000000000
+  end
+  object GeoXMLTree: TXMLTree
+    BufferedDisplay = False
+    CrossBox.Border.Fill.Color = claGray
+    Grid.BigPen.Fill.Color = claGray
+    Grid.Pen.Fill.Color = claSilver
+    HotTrack.Font.StyleExt = {04040000000000000004000000}
+    Page.Border.Fill.Color = claDarkgray
+    Selected.Border.Fill.Color = claYellow
+    Zoom.Brush.Kind = None
+    Align = Client
+    TabOrder = 6
+  end
+end
